@@ -1,0 +1,71 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="topnav">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="index.html#about"><i class="fa fa-file-text"></i>About</a>
+  <a href="index.html#fooot"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+
+</div>
+<div class="searchBox1">
+
+            <input class="searchInput1"type="text" name="" placeholder="Search">
+            <button class="searchButton1" href="#">
+                <i class="material-icons1">
+                    search
+                </i>
+            </button>
+        </div>
+
+<div class="hero">
+ 	<div class="form-box">
+ 		<div class="button-box">
+ 			<div id="btn"></div>
+ 			<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+ 			<button type="button" class="toggle-btn" onclick="register()">Register</button>
+ 		</div>
+ 		<div class="social-icons">
+	<a href="https://www.facebook.com/"><img src="fb.png"></a>
+	<a href="https://twitter.com/"><img src="tw.png"></a>
+	<a href="https://www.linkedin.com/"><img src="lk.png"></a>
+</div>
+<form id="login" class="input-group">
+	<input type="Text1" name="" class="input-field" placeholder="User Id" required>
+	<input type="Password" name="" class="input-field" placeholder="Enter Password" required>
+	<input type="checkbox" name="" class="check-box"><span>Remember Password</span>
+	<button type="submit" class="submit-btn">Log in</button>
+</form>
+<form id="register" class="input-group">
+	<input type="Text1" name="" class="input-field" placeholder="User Id" required>
+	<input type="email" name="" class="input-field" placeholder="Email Id" required>
+	<input type="Password" name="" class="input-field" placeholder="Enter Password" required>
+	<input type="checkbox" name="" class="check-box"><span>I agree to the terms and condition</span>
+	<button type="submit" class="submit-btn">Register</button>
+</form>
+ 	</div>
+ </div>
+
+ <script type="text/javascript">
+ 	var x = document.getElementById("login");
+ 	var y = document.getElementById("register");
+ 	var z = document.getElementById("btn");
+
+ 	function register(){
+ 		x.style.left = "-400px";
+ 		y.style.left = "50px";
+ 		z.style.left = "110px";
+ 	}
+ 	function login(){
+ 		x.style.left = "50px";
+ 		y.style.left = "450px";
+ 		z.style.left = "0";
+ 	}
+ </script>
+</body>
+</html>
